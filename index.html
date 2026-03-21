@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gustavo Oliveira de Carvalho — Engenheiro de Software Backend</title>
+  <meta name="description" content="Currículo de Gustavo Oliveira de Carvalho — Engenheiro de Software Backend com foco em Observabilidade & Performance." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #0e0e11;
+      --surface: #161619;
+      --surface-alt: #1c1c21;
+      --border: #2a2a32;
+      --text: #e4e4e7;
+      --text-muted: #a1a1aa;
+      --accent: #22d3ee;
+      --accent-dim: rgba(34, 211, 238, 0.12);
+      --accent-green: #34d399;
+      --accent-amber: #fbbf24;
+      --radius: 12px;
+      --font-sans: 'Inter', system-ui, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    *, *::before, *::after {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      font-family: var(--font-sans);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      min-height: 100vh;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    a:hover {
+      opacity: 0.8;
+    }
+
+    .container {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 3rem 1.5rem 4rem;
+    }
+
+    /* ── HEADER ── */
+    header {
+      margin-bottom: 3rem;
+    }
+
+    .header-grid {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 1.5rem;
+    }
+
+    .header-info h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      line-height: 1.2;
+    }
+
+    .header-info .subtitle {
+      font-size: 1rem;
+      color: var(--accent);
+      font-weight: 500;
+      margin-top: 0.25rem;
+      font-family: var(--font-mono);
+    }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1rem;
+    }
+
+    .contact-links a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.82rem;
+      padding: 0.35rem 0.75rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      color: var(--text-muted);
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .contact-links a:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+      opacity: 1;
+    }
+
+    .contact-links svg {
+      width: 14px;
+      height: 14px;
+      flex-shrink: 0;
+    }
+
+    /* ── SECTIONS ── */
+    section {
+      margin-bottom: 2.5rem;
+    }
+
+    .section-title {
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .section-title::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* ── SUMMARY ── */
+    .summary {
+      font-size: 0.95rem;
+      color: var(--text-muted);
+      line-height: 1.8;
+      max-width: 720px;
+    }
+
+    /* ── EXPERIENCE ── */
+    .experience-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.75rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .experience-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--accent), var(--accent-green));
+    }
+
+    .exp-header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 0.5rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .exp-company {
+      font-size: 1.15rem;
+      font-weight: 700;
+    }
+
+    .exp-period {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+    }
+
+    .exp-role {
+      font-size: 0.9rem;
+      color: var(--accent);
+      font-weight: 500;
+      margin-bottom: 0.25rem;
+    }
+
+    .exp-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+    }
+
+    .impact-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .impact-list li {
+      position: relative;
+      padding-left: 1.25rem;
+      font-size: 0.88rem;
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .impact-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0.55em;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    .impact-list li strong {
+      color: var(--text);
+      font-weight: 600;
+    }
+
+    .impact-highlight {
+      display: inline;
+      background: var(--accent-dim);
+      color: var(--accent);
+      padding: 0.05em 0.4em;
+      border-radius: 4px;
+      font-family: var(--font-mono);
+      font-size: 0.82em;
+      font-weight: 500;
+    }
+
+    /* ── TECH GRID ── */
+    .tech-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1rem;
+    }
+
+    .tech-category {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+    }
+
+    .tech-category-label {
+      font-size: 0.72rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+      font-family: var(--font-mono);
+    }
+
+    .tech-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    .tech-tag {
+      font-size: 0.78rem;
+      padding: 0.3rem 0.65rem;
+      background: var(--surface-alt);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .tech-tag:hover {
+      border-color: var(--accent);
+      color: var(--text);
+    }
+
+    .tech-category.studying {
+      border-style: dashed;
+    }
+
+    .tech-category.studying .tech-category-label {
+      color: var(--accent-amber);
+    }
+
+    .tech-category.studying .tech-tag:hover {
+      border-color: var(--accent-amber);
+    }
+
+    /* ── EDUCATION & LANGUAGES ── */
+    .info-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1rem;
+    }
+
+    .info-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+    }
+
+    .info-card-title {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 0.15rem;
+    }
+
+    .info-card-subtitle {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .info-card-meta {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-family: var(--font-mono);
+      color: var(--accent-green);
+      background: rgba(52, 211, 153, 0.1);
+      padding: 0.2rem 0.55rem;
+      border-radius: 4px;
+      margin-top: 0.65rem;
+    }
+
+    .lang-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .lang-list li {
+      font-size: 0.9rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .lang-badge {
+      font-size: 0.72rem;
+      font-family: var(--font-mono);
+      padding: 0.15rem 0.5rem;
+      border-radius: 4px;
+      font-weight: 500;
+    }
+
+    .lang-badge.native {
+      background: rgba(52, 211, 153, 0.12);
+      color: var(--accent-green);
+    }
+
+    .lang-badge.technical {
+      background: rgba(34, 211, 238, 0.12);
+      color: var(--accent);
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      margin-top: 3rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(16px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .animate-in {
+      animation: fadeUp 0.5s ease-out both;
+    }
+
+    .delay-1 { animation-delay: 0.05s; }
+    .delay-2 { animation-delay: 0.1s; }
+    .delay-3 { animation-delay: 0.15s; }
+    .delay-4 { animation-delay: 0.2s; }
+    .delay-5 { animation-delay: 0.25s; }
+    .delay-6 { animation-delay: 0.3s; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      .container {
+        padding: 2rem 1rem 3rem;
+      }
+
+      .header-info h1 {
+        font-size: 1.5rem;
+      }
+
+      .experience-card {
+        padding: 1.25rem;
+      }
+
+      .tech-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ── PRINT ── */
+    @media print {
+      body {
+        background: #fff;
+        color: #111;
+      }
+
+      .container {
+        max-width: 100%;
+        padding: 0;
+      }
+
+      .experience-card,
+      .tech-category,
+      .info-card {
+        background: none;
+        border: 1px solid #ddd;
+        break-inside: avoid;
+      }
+
+      .experience-card::before {
+        display: none;
+      }
+
+      a {
+        color: #111;
+      }
+
+      .contact-links a {
+        background: none;
+        border-color: #ccc;
+        color: #333;
+      }
+
+      .section-title {
+        color: #555;
+      }
+
+      .section-title::after {
+        background: #ddd;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- HEADER -->
+    <header class="animate-in delay-1">
+      <div class="header-grid">
+        <div class="header-info">
+          <h1>Gustavo Oliveira de Carvalho</h1>
+          <p class="subtitle">Engenheiro de Software Backend · Observabilidade &amp; Performance</p>
+          <div class="contact-links">
+            <a href="mailto:gustavoooliveiradecarvalho@gmail.com">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              gustavoooliveiradecarvalho@gmail.com
+            </a>
+            <a href="https://linkedin.com/in/gusta-carvalho" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+              linkedin.com/gusta-carvalho
+            </a>
+            <a href="https://github.com/carvalhosauro" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65S8.93 17.38 9 18v4"/><path d="M9 18c-4.51 2-5-2-7-2"/></svg>
+              github.com/carvalhosauro
+            </a>
+            <a>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              Brasil
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- RESUMO PROFISSIONAL -->
+    <section class="animate-in delay-2">
+      <h2 class="section-title">Resumo Profissional</h2>
+      <p class="summary">
+        Engenheiro de Software com foco em Backend, atuando no desenvolvimento e evolução de sistemas em
+        produção, com forte interesse em <strong>observabilidade</strong>, <strong>confiabilidade</strong> e
+        <strong>performance</strong>. Experiência em análise de problemas técnicos, desenho de soluções backend
+        e implementação validada em ambientes reais, incluindo modernização de código legado, otimização de
+        integrações externas e criação de métricas acionáveis para o negócio. Perfil orientado a dados, melhoria
+        contínua e impacto operacional.
+      </p>
+    </section>
+
+    <!-- EXPERIÊNCIA PROFISSIONAL -->
+    <section class="animate-in delay-3">
+      <h2 class="section-title">Experiência Profissional</h2>
+      <div class="experience-card">
+        <div class="exp-header">
+          <span class="exp-company">Pigz</span>
+          <span class="exp-period">Jan 2025 — Presente</span>
+        </div>
+        <p class="exp-role">Desenvolvedor Backend</p>
+        <p class="exp-desc">Startup de tecnologia focada em soluções de delivery e logística.</p>
+        <ul class="impact-list">
+          <li>
+            <strong>Otimização de Custos e Performance:</strong> Análise de consumo e latência em integrações com a
+            Google Geolocation API, desenho de estratégias de cache e refatoração de módulos críticos, com validação
+            técnica e implementação — reduzindo custos operacionais em <span class="impact-highlight">~50%</span> e
+            melhorando a latência do sistema.
+          </li>
+          <li>
+            <strong>Observabilidade e Confiabilidade:</strong> Identificação de limitações no diagnóstico de incidentes
+            em produção e desenho da estratégia de observabilidade (logs, métricas e rastreamento distribuído), com
+            validação técnica e implementação utilizando OpenTelemetry, Jaeger e Loki — reduzindo o
+            <span class="impact-highlight">MTTR</span> em incidentes.
+          </li>
+          <li>
+            <strong>Resiliência de Integrações Externas:</strong> Análise de riscos em dependências de APIs de terceiros
+            e desenho de soluções para redução de acoplamento e aumento de resiliência do sistema, utilizando padrões
+            como <span class="impact-highlight">Circuit Breaker</span>.
+          </li>
+          <li>
+            <strong>Evolução de Serviços Backend:</strong> Desenvolvimento, manutenção e refatoração de APIs escaláveis
+            utilizando PHP (Symfony), participando de discussões técnicas sobre arquitetura, padrões e boas práticas.
+          </li>
+          <li>
+            <strong>Engenharia de Dados &amp; BI:</strong> Análise de dados operacionais e desenvolvimento de dashboards
+            no Metabase, transformando dados brutos do banco de produção em métricas acionáveis para apoio à tomada de
+            decisão técnica e de negócio.
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- TECNOLOGIAS -->
+    <section class="animate-in delay-4">
+      <h2 class="section-title">Tecnologias</h2>
+      <div class="tech-grid">
+        <div class="tech-category">
+          <p class="tech-category-label">Backend &amp; Core</p>
+          <div class="tech-tags">
+            <span class="tech-tag">PHP</span>
+            <span class="tech-tag">Symfony</span>
+            <span class="tech-tag">MySQL</span>
+            <span class="tech-tag">Docker</span>
+            <span class="tech-tag">Linux</span>
+            <span class="tech-tag">Git</span>
+          </div>
+        </div>
+        <div class="tech-category">
+          <p class="tech-category-label">Observabilidade &amp; Infra</p>
+          <div class="tech-tags">
+            <span class="tech-tag">OpenTelemetry</span>
+            <span class="tech-tag">Jaeger</span>
+            <span class="tech-tag">Loki</span>
+            <span class="tech-tag">Prometheus</span>
+            <span class="tech-tag">Grafana</span>
+            <span class="tech-tag">AWS SQS</span>
+          </div>
+        </div>
+        <div class="tech-category">
+          <p class="tech-category-label">Dados &amp; BI</p>
+          <div class="tech-tags">
+            <span class="tech-tag">Modelagem SQL</span>
+            <span class="tech-tag">Metabase</span>
+            <span class="tech-tag">ETL</span>
+          </div>
+        </div>
+        <div class="tech-category studying">
+          <p class="tech-category-label">Em Estudo</p>
+          <div class="tech-tags">
+            <span class="tech-tag">Go (Golang)</span>
+            <span class="tech-tag">Kubernetes</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCAÇÃO & IDIOMAS -->
+    <section class="animate-in delay-5">
+      <h2 class="section-title">Educação</h2>
+      <div class="info-cards">
+        <div class="info-card">
+          <p class="info-card-title">Instituto Federal de Roraima (IFRR)</p>
+          <p class="info-card-subtitle">Tecnólogo em Análise e Desenvolvimento de Sistemas (TADS)</p>
+          <span class="info-card-meta">Conclusão prevista: Dez 2026</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="animate-in delay-6">
+      <h2 class="section-title">Idiomas</h2>
+      <div class="info-cards">
+        <div class="info-card">
+          <ul class="lang-list">
+            <li>
+              Português
+              <span class="lang-badge native">Nativo</span>
+            </li>
+            <li>
+              Inglês
+              <span class="lang-badge technical">Técnico</span>
+              <span style="font-size:0.8rem; color:var(--text-muted)">— em evolução, com foco em carreira internacional</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>Gustavo Oliveira de Carvalho &middot; 2025</p>
+    </footer>
+  </div>
+</body>
+</html>
