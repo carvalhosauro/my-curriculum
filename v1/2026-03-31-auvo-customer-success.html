@@ -2,9 +2,9 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Gustavo Oliveira de Carvalho — Fullstack (Jr → Pl) · MK Solutions</title>
+  <title>Gustavo Oliveira de Carvalho — Customer Success Jr · Auvo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Currículo adaptado para MK Solutions — Gustavo Oliveira de Carvalho.">
+  <meta name="description" content="Currículo adaptado para Auvo (CS Jr) — Gustavo Oliveira de Carvalho.">
 
   <style>
     :root {
@@ -57,25 +57,14 @@
       border-bottom: 1px solid var(--line);
     }
 
-    .name {
-      margin: 0;
-      font-size: 34px;
-      letter-spacing: -0.02em;
-      line-height: 1.12;
-    }
-
+    .name { margin: 0; font-size: 34px; letter-spacing: -0.02em; line-height: 1.12; }
     .title { margin-top: 10px; color: var(--muted); font-size: 15px; }
     .tagline { margin-top: 10px; color: var(--muted-2); font-size: 14px; }
 
     .contact {
-      margin: 2px 0 0;
-      padding: 0;
-      list-style: none;
-      display: grid;
-      gap: 8px;
-      justify-items: end;
-      font-size: 13.5px;
-      color: var(--muted);
+      margin: 2px 0 0; padding: 0; list-style: none;
+      display: grid; gap: 8px; justify-items: end;
+      font-size: 13.5px; color: var(--muted);
     }
     .contact li { display: flex; gap: 10px; align-items: baseline; }
     .contact .k { color: var(--muted-2); min-width: 68px; text-align: right; }
@@ -85,98 +74,44 @@
     section { margin-top: 20px; }
 
     h2 {
-      margin: 0 0 12px;
-      font-size: 14px;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--muted-2);
+      margin: 0 0 12px; font-size: 14px;
+      letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted-2);
     }
-
     h3 { margin: 0; font-size: 16px; letter-spacing: -0.01em; }
     p { margin: 0 0 10px; color: var(--ink); }
 
-    .grid-2 {
-      display: grid;
-      grid-template-columns: 1.3fr 1fr;
-      gap: 16px 26px;
-    }
+    .grid-2 { display: grid; grid-template-columns: 1.3fr 1fr; gap: 16px 26px; }
 
     .card {
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      padding: 14px;
+      border: 1px solid var(--line); border-radius: 14px; padding: 14px;
       background: linear-gradient(180deg, rgba(248, 250, 252, 0.6), rgba(255, 255, 255, 0.95));
     }
 
-    .bullets {
-      margin: 10px 0 0;
-      padding-left: 18px;
-      color: var(--ink);
-    }
+    .bullets { margin: 10px 0 0; padding-left: 18px; color: var(--ink); }
     .bullets li { margin: 7px 0; }
 
-    .role {
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      padding: 14px;
-      background: #fff;
-    }
-
-    .role-head {
-      display: grid;
-      grid-template-columns: 1fr auto;
-      gap: 10px;
-      align-items: baseline;
-      margin-bottom: 8px;
-    }
-
+    .role { border: 1px solid var(--line); border-radius: 14px; padding: 14px; background: #fff; }
+    .role-head { display: grid; grid-template-columns: 1fr auto; gap: 10px; align-items: baseline; margin-bottom: 8px; }
     .meta { font-size: 13px; color: var(--muted); }
 
-    .chips {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      margin-top: 10px;
-    }
-
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
     .chip {
-      display: inline-flex;
-      align-items: center;
-      padding: 6px 10px;
-      border-radius: 999px;
-      background: var(--chip);
-      border: 1px solid rgba(37, 99, 235, 0.15);
-      color: #0b2a6f;
-      font-size: 12.5px;
-      white-space: nowrap;
+      display: inline-flex; align-items: center; padding: 6px 10px;
+      border-radius: 999px; background: var(--chip);
+      border: 1px solid rgba(37, 99, 235, 0.15); color: #0b2a6f;
+      font-size: 12.5px; white-space: nowrap;
     }
 
-    .skills {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 12px;
-    }
+    .skills { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
     .skill-group h3 { font-size: 14px; }
     .skill-group p { margin: 8px 0 0; color: var(--muted); font-size: 13.5px; }
 
     .footer {
-      margin-top: 20px;
-      padding-top: 12px;
-      border-top: 1px solid var(--line);
-      font-size: 12.5px;
-      color: var(--muted);
-      display: flex;
-      justify-content: space-between;
-      gap: 16px;
-      flex-wrap: wrap;
+      margin-top: 20px; padding-top: 12px; border-top: 1px solid var(--line);
+      font-size: 12.5px; color: var(--muted);
+      display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
     }
     .footer .hint { color: var(--muted-2); }
-    .keywords {
-      margin-top: 12px;
-      font-size: 12px;
-      color: var(--muted);
-      line-height: 1.45;
-    }
 
     @media (max-width: 780px) {
       .page { padding: 22px; }
@@ -189,20 +124,11 @@
 
     @media print {
       @page { size: A4; margin: 8mm; }
-
       :root {
-        --bg: #ffffff;
-        --panel: #ffffff;
-        --ink: #000000;
-        --muted: #111827;
-        --muted-2: #111827;
-        --line: #d1d5db;
-        --accent: #000000;
-        --accent-2: #000000;
-        --chip: #f3f4f6;
-        --shadow: none;
+        --bg: #ffffff; --panel: #ffffff; --ink: #000000;
+        --muted: #111827; --muted-2: #111827; --line: #d1d5db;
+        --accent: #000000; --accent-2: #000000; --chip: #f3f4f6; --shadow: none;
       }
-
       body { background: #fff; font-size: 10.3pt; line-height: 1.38; }
       .page { box-shadow: none; border: none; margin: 0; width: 100%; padding: 0; }
       a { text-decoration: underline; }
@@ -222,8 +148,6 @@
       .meta { font-size: 11px; }
       .chip { font-size: 10px; padding: 3px 7px; }
       .chips { gap: 5px; margin-top: 8px; }
-      .footer { margin-top: 12px; padding-top: 8px; font-size: 10.5px; }
-      .keywords { margin-top: 8px; font-size: 10px; }
     }
   </style>
 </head>
@@ -233,9 +157,9 @@
     <header class="top">
       <div>
         <h1 class="name">Gustavo Oliveira de Carvalho</h1>
-        <div class="title">Desenvolvedor Backend • APIs, Microsserviços & Cloud</div>
+        <div class="title">Produto & Cliente • Migração para Customer Success</div>
         <div class="tagline">
-          ~1 ano de experiência em produção com foco em APIs, integrações, Docker, AWS e sistemas distribuídos. Em transição ativa para fullstack.
+          Desenvolvedor com atuação na interseção entre produto, suporte e cliente — trazendo visão técnica profunda e orientação a resultado para uma função focada no sucesso do cliente.
         </div>
       </div>
 
@@ -252,20 +176,19 @@
         <div class="card">
           <h2>Resumo</h2>
           <p>
-            Desenvolvedor Backend com atuação em sistemas de produção críticos: APIs REST, integrações com serviços externos,
-            Docker, AWS e práticas de resiliência em arquiteturas distribuídas.
+            Atuo no elo entre produto, suporte e cliente em uma startup de tecnologia: resolvo problemas técnicos complexos, traduzo para times não-técnicos e conduzo alinhamentos diretos com clientes quando necessário.
           </p>
           <p class="meta">
-            Transição ativa para fullstack: estudando Go, Kubernetes e arquitetura de microsserviços. Interesse em contribuir com times de produto em ambiente ágil.
+            Busco migrar para Customer Success — onde essa intersecção com o cliente se torna o foco central. Entender o produto de dentro é o que diferencia um CS técnico.
           </p>
         </div>
 
         <div class="card">
-          <h2>Impacto</h2>
+          <h2>Destaques</h2>
           <ul class="bullets">
-            <li><strong>~50% de redução de custo</strong> em integração crítica via análise, cache e refatoração de módulo.</li>
-            <li><strong>Maior estabilidade</strong> em integrações externas com padrões de resiliência (Circuit Breaker).</li>
-            <li><strong>Visibilidade operacional</strong> com instrumentação de logs, métricas e tracing em produção.</li>
+            <li><strong>Elo produto-cliente diário:</strong> resolvo dúvidas técnicas (fiscal e produto) que chegam via suporte e comercial, traduzindo para linguagem clara ao cliente.</li>
+            <li><strong>Atendimento direto:</strong> conduzi call com cliente explicando funcionalidade que desenvolvi — do produto ao uso real.</li>
+            <li><strong>Dados para decisão:</strong> dashboards e métricas de negócio (base ativa, receita) para apoiar prioridades do time.</li>
           </ul>
         </div>
       </section>
@@ -276,46 +199,41 @@
           <div class="role-head">
             <div>
               <h3>Pigz</h3>
-              <div class="meta">Desenvolvedor Backend</div>
+              <div class="meta">Desenvolvedor Backend — Produto & Operações</div>
             </div>
             <div class="meta">Jan/2025 – Presente</div>
           </div>
 
           <p class="meta">
-            Backend crítico de delivery/logística. Atuação em APIs, integrações externas, Docker, AWS e resiliência de sistema.
+            Startup de tecnologia (delivery/logística). Ambiente enxuto com atuação cross-funcional: produto, suporte técnico, operações e contato com cliente.
           </p>
 
           <ul class="bullets">
             <li>
-              <strong>APIs e integrações:</strong> desenvolvimento e manutenção de APIs REST com PHP (Symfony); integrações com serviços externos com foco em estabilidade e custo.
+              <strong>Bridge produto-suporte-cliente:</strong> ponto de referência técnica diária para o time de suporte e comercial — resolvo dúvidas complexas de produto (especialmente fiscal) e traduzo em linguagem acessível para repassar ao cliente.
             </li>
             <li>
-              <strong>Docker e infraestrutura:</strong> uso de Docker em ambiente de produção para containerização e consistência entre ambientes.
+              <strong>Atendimento e treinamento ao cliente:</strong> participei de reuniões e calls com clientes; conduzi diretamente a explicação de uma funcionalidade (que desenvolvi) para um cliente, garantindo clareza e adoção.
             </li>
             <li>
-              <strong>AWS e sistemas distribuídos:</strong> uso de AWS SQS para filas assíncronas e desacoplamento entre serviços.
+              <strong>Mentoria e comunicação didática:</strong> acompanho e oriento novato do time — explicando codebase, fluxos e tomadas de decisão de forma estruturada.
             </li>
             <li>
-              <strong>Resiliência:</strong> implementação de padrões como Circuit Breaker para reduzir falhas em cascata em integrações externas.
+              <strong>Análise de dados orientada a negócio:</strong> construção de dashboards no Metabase para acompanhamento de métricas de crescimento (base ativa e receita), apoiando decisões estratégicas do time.
             </li>
             <li>
-              <strong>Observabilidade:</strong> instrumentação com OpenTelemetry, Jaeger e Loki para diagnóstico e redução de MTTR em incidentes.
-            </li>
-            <li>
-              <strong>Dados e decisão:</strong> dashboards no Metabase e queries SQL para apoiar prioridades técnicas e de negócio.
+              <strong>Resolução de problemas sob pressão:</strong> diagnóstico e solução de incidentes em produção com impacto direto nos clientes — habituado a agir rápido com dados acionáveis.
             </li>
           </ul>
 
-          <div class="chips" aria-label="Tecnologias">
-            <span class="chip">PHP (Symfony)</span>
-            <span class="chip">MySQL</span>
-            <span class="chip">Docker</span>
-            <span class="chip">AWS SQS</span>
-            <span class="chip">Linux</span>
-            <span class="chip">Git</span>
-            <span class="chip">OpenTelemetry</span>
-            <span class="chip">Prometheus</span>
-            <span class="chip">Grafana</span>
+          <div class="chips" aria-label="Contexto técnico">
+            <span class="chip">Produto SaaS</span>
+            <span class="chip">Suporte técnico</span>
+            <span class="chip">Atendimento ao cliente</span>
+            <span class="chip">Análise de dados</span>
+            <span class="chip">Metabase</span>
+            <span class="chip">Mentoria</span>
+            <span class="chip">Ambiente remoto</span>
           </div>
         </article>
       </section>
@@ -324,23 +242,23 @@
         <h2>Competências</h2>
         <div class="skills">
           <div class="card skill-group">
-            <h3>Backend & APIs</h3>
-            <p>APIs REST, integrações externas, regras de negócio, resiliência e otimização de performance/custo.</p>
+            <h3>Relação com o cliente</h3>
+            <p>Tradução de problemas técnicos em linguagem clara; condução de calls e alinhamentos; comunicação empática e orientada à resolução.</p>
           </div>
 
           <div class="card skill-group">
-            <h3>Cloud & Infra</h3>
-            <p>Docker (produção), AWS SQS, Linux, Git, automações com Bash e agendamento de tarefas.</p>
+            <h3>Análise & dados</h3>
+            <p>Dashboards e métricas de negócio (Metabase, SQL) para acompanhar performance, identificar problemas e apoiar decisões.</p>
           </div>
 
           <div class="card skill-group">
-            <h3>Sistemas Distribuídos</h3>
-            <p>Filas assíncronas, desacoplamento de serviços, padrões de resiliência e observabilidade end-to-end.</p>
+            <h3>Produto & contexto técnico</h3>
+            <p>Conhecimento profundo do produto por dentro — facilita entender dores do cliente, antecipar problemas e traduzir feedbacks ao time de produto.</p>
           </div>
 
           <div class="card skill-group">
-            <h3>Em estudo ativo</h3>
-            <p>Go (Golang), Kubernetes e fundamentos de arquitetura de microsserviços.</p>
+            <h3>Organização & multitarefa</h3>
+            <p>Gestão simultânea de desenvolvimento, suporte técnico, incidentes e mentoria em ambiente de startup com ritmo acelerado.</p>
           </div>
         </div>
       </section>
@@ -355,7 +273,7 @@
         <div class="card">
           <h2>Idiomas</h2>
           <p class="meta"><strong>Português:</strong> Nativo</p>
-          <p class="meta"><strong>Inglês:</strong> Técnico (leitura de documentação; em evolução)</p>
+          <p class="meta"><strong>Inglês:</strong> Técnico (leitura e ferramentas; em evolução)</p>
         </div>
       </section>
     </main>

@@ -1,5 +1,5 @@
 # Relatório de aderência — Auvo Customer Success Jr
-**Data:** 2026-03-31
+**Data:** 2026-03-31 (revisado após novos feitos documentados)
 
 ---
 
@@ -7,67 +7,70 @@
 
 | Requisito (P0) | Situação | Base relacionada | Aderência |
 |----------------|----------|-----------------|-----------|
-| Experiência prévia em CS/CX | ❌ GAP | Não documentado | Nenhuma |
-| Comunicação clara e didática | ⚠️ Não comprovado | Soft skill; sem evidência na base | Não documentada |
-| Capacidade analítica / dados | 🟡 Parcial | Metabase para decisão técnica/negócio | Parcial — contexto interno, não cliente |
-| Gerenciar múltiplas contas | ❌ GAP | Não aplicável ao perfil atual | Nenhuma |
-| Inteligência emocional | ⚠️ Não comprovado | Soft skill sem evidência documentada | Não documentada |
-| Excel intermediário | ❌ Não documentado | Usa SQL/Metabase, não Excel | Baixa |
-| Ferramentas digitais | ✅ OK | Profissional de tecnologia, alta adaptabilidade | Alta |
-| Trabalho remoto | 🟡 Possível | Não explicitado na base | A confirmar |
+| Experiência em CS/CX | 🟡 Parcial | Elo técnico produto-suporte-cliente na Pigz; call direta com cliente | Baixa-média — sem o cargo formal, mas com práticas reais |
+| Comunicação clara e didática | ✅ Evidenciado | Explica técnico para suporte/comercial/cliente; mentorou novato | Média — não em escala de carteira, mas comprovado |
+| Capacidade analítica / dados | ✅ OK | Metabase (base ativa, receita, decisões de negócio) | Média — dados internos, não health de cliente |
+| Ferramentas digitais | ✅ OK | Profissional de tecnologia com stack ampla | Alta |
+| Trabalho 100% remoto | 🟡 A confirmar | Não explicitado na base | A confirmar com o candidato |
+| Inteligência emocional / múltiplas demandas | 🟡 Parcial | Gerencia dúvidas diárias de suporte + desenvolvimento + incidentes | Parcial |
+| Excel intermediário | ❌ Não documentado | Usa SQL/Metabase — reportar como "análise de dados via SQL e Metabase" | Baixa para Excel especificamente |
 
 | Requisito (P1 — Diferenciais) | Situação |
 |-------------------------------|----------|
 | CRM (HubSpot) | ❌ GAP |
-| Contas high touch / B2B | ❌ GAP |
-| Experiência em SaaS/tech | ✅ OK — Pigz é empresa tech |
-| Retenção / churn / expansão | ❌ GAP |
+| Empresa SaaS/tech | ✅ OK — Pigz é tech |
+| Contas high touch / B2B | 🟡 Análogo — participou de calls com clientes em contexto B2B de delivery |
+| Retenção / churn / expansão | ❌ GAP — não é responsabilidade atual |
 
 ---
 
-## Avaliação geral
+## Top 3 impactos para destacar
 
-**Aderência estimada: ~10–15%**
+1. **Elo produto-cliente:** diariamente atua como ponte entre produto, suporte, comercial e cliente — traduzindo complexidade técnica em linguagem clara. Exatamente o que CS faz como "bridge entre Cliente, Suporte e Produto".
 
-Esta vaga é de **Customer Success** — uma função de relacionamento com clientes, retenção, treinamento e gestão de carteira. É uma carreira distinta de Engenharia de Software. O perfil de Gustavo é técnico/backend, sem experiência documentada em CS/CX ou qualquer atuação client-facing.
+2. **Conhecimento profundo de produto:** desenvolveu funcionalidades e explicou diretamente ao cliente como usá-las. Em CS SaaS, entender o produto de dentro é um diferencial competitivo real.
 
-### O que há de compatível
-- **Setor tech:** trabalha em empresa de tecnologia, entende produto digital de dentro
-- **Visão analítica:** usa dados e métricas para apoiar decisões (Metabase, dashboards)
-- **Adaptabilidade a ferramentas digitais:** alta, dado o perfil de engenheiro
-- **Empresa SaaS:** Auvo valoriza experiência prévia em SaaS — Pigz é tech
-
-### Gaps críticos
-1. **Experiência em CS/CX** — requisito principal; sem nenhuma evidência na base
-2. **Gestão de carteira de clientes** — nunca exercida
-3. **Comunicação consultiva e treinamentos** — sem histórico documentado
-4. **CRM** — não documentado
-5. **Excel** — usa SQL/Metabase; Excel não documentado
+3. **Capacidade analítica:** usa dados (Metabase, SQL) para acompanhar métricas de negócio e apoiar decisões — base para monitoramento de health da carteira.
 
 ---
 
-## Top 3 pontos transferíveis (o que temos)
+## Ajustes de narrativa (storytelling de migração)
 
-1. **Perfil analítico:** construção de dashboards e análise de dados para apoiar decisões — alinha com o lado de "monitoramento de saúde da carteira por dados"
-2. **Background técnico em SaaS:** facilita entender o produto profundamente e traduzir necessidades técnicas dos clientes — diferencial para CS em empresa de software
-3. **Resolução de problemas em produção:** mentalidade de diagnóstico e ação orientada a resultado — transferível para o dia a dia de CS
+**Posicionamento:** "Desenvolvedor com mentalidade de produto e cliente — migração intencional para CS onde essa intersecção é o foco principal."
+
+**Frases-chave para entrevista:**
+- "Na Pigz, já atuo no elo entre produto e cliente — resolvo problemas técnicos complexos e traduzo para times de suporte e comercial repassarem ao cliente."
+- "Participei diretamente de calls com clientes e expliquei funcionalidades que eu mesmo desenvolvi. Quero levar essa proximidade com o cliente para uma função onde ela seja o centro, não o paralelo."
+- "Entender o produto de dentro é o que diferencia um CS técnico — e isso é o que trago."
+
+**O que ajustar no discurso:**
+- Não esconder que é dev — usar como diferencial ("entendo o produto onde a maioria dos CS não entra")
+- Focar na orientação a resultado e à resolução de problemas do cliente, não na stack técnica
+- Mencionar mentoria como evidência de comunicação didática
 
 ---
 
-## Recomendação
+## Gaps e plano realista
 
-> **Candidatura fora do perfil.** Customer Success é uma área distinta de Engenharia. Não há histórico de atuação client-facing, gestão de carteira ou treinamentos na base. A chance de passar triagem é muito baixa para quem não tem nenhuma experiência em CS/CX.
+| Gap | Mitigação |
+|-----|-----------|
+| Sem carteira de clientes gerenciada | Honesto: experiência de contato existe, escala de carteira não — mas é Jr |
+| CRM | Curva curta; já usa ferramentas complexas no dia a dia |
+| Excel | Substituível por SQL/Metabase na narrativa; pode aprender rápido |
+| Sem experiência formal em CS | Narrativa de migração + práticas reais comprovam intenção e fit cultural |
+
+---
+
+## Recomendação revisada
+
+> **Candidatura viável com a narrativa certa.** Os requisitos de CS Jr, especialmente em empresa SaaS, não exigem anos de carreira formal — exigem orientação ao cliente, comunicação, dados e fit cultural. Gustavo tem os três primeiros de forma comprovada, mesmo que em contexto técnico. A migração é legítima e a história é real.
 >
-> **Se o interesse for genuíno em CS:** o background técnico é um diferencial real em empresas SaaS (entender o produto profundamente abre portas). Seria necessário construir evidências: projetos de apoio técnico a usuários, onboarding de colegas/clientes, mentorias, ou buscar vagas de "Technical CS" / "Technical Account Manager" onde a base técnica tem mais peso.
->
-> **Alternativa mais aderente:** vagas de Backend Jr/Pl, SRE Jr, ou Developer Advocate — onde o perfil técnico é central e as habilidades de comunicação e dados já documentadas têm valor.
+> **O risco é na triagem:** sem o cargo "CS" no histórico, pode ser filtrado antes da entrevista. Mitigação: carta de apresentação ou mensagem personalizada que conte a história de transição antes do currículo.
 
 ---
 
-## Currículo
+## Currículo gerado
 
-Dado o baixo fit e a natureza de pivô de carreira, **não foi gerado currículo HTML** para esta vaga.
+Arquivo: `v0/2026-03-31-auvo-customer-success.html`
 
-Gerar um currículo para CS com o perfil atual exigiria reescrever a narrativa de forma que não refletiria a experiência real — o que aumentaria o risco de reprovação em entrevista técnica/situacional de CS.
-
-Se quiser mesmo tentar, posso gerar — mas recomendo fortemente focar na segunda vaga (MK Solutions) ou buscar vagas técnicas com melhor match.
+**Estratégia:** currículo reposicionado para CS — enfatiza o elo produto-cliente, comunicação, dados e mentalidade de resolução de problema. Stack técnica presente mas em segundo plano. Sem fabricar experiências.
