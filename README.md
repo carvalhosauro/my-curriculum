@@ -1,21 +1,48 @@
-# My curriculum (HTML → PDF)
+# My curriculum
 
-A single HTML page you can open in a browser and **save as PDF** — that’s the whole idea. No build step, no framework: one file, your CV. ;)
+Repositório de dados de carreira e geração de currículos customizados em HTML/PDF.
 
-## What’s inside
+## Casos de uso
 
-- **`index.html`** — Self-contained résumé: structure, typography, and styles in one place.
-- **Print layout** — `@media print` targets **A4**, strips screen-only chrome (shadows, page margins), and keeps header colors via `print-color-adjust` so the PDF looks like the page.
+### 1. Atualizar dados da carreira
 
-## Preview
+Sempre que acontecer um evento (novo emprego, nova habilidade, nova certificação), consulte `knowledge-base/QUANDO-ATUALIZAR.md` — ou simplesmente avise o agente o que mudou e ele sabe o que atualizar.
 
-Open `index.html` in any modern browser (double-click or drag the file into a window).
+### 2. Gerar currículo customizado por vaga
 
-## Export to PDF
+Compartilhe o link da vaga. O agente:
+1. Busca e extrai os requisitos da página
+2. Cria o contexto em `knowledge-base/vagas/`
+3. Lê sua base de perfil + feitos
+4. Gera um relatório de aderência em `knowledge-base/relatorios/`
+5. Gera o currículo HTML customizado em `v0/`
 
-1. Use **Print** (`Ctrl+P` / `Cmd+P`).
-2. Choose **Save as PDF** (or “Microsoft Print to PDF”, etc.).
-3. Prefer **A4** if your print dialog lets you pick paper size (the CSS assumes A4).
-4. Enable **background graphics** / **print backgrounds** if you want the navy header and accents to match the on-screen version.
+---
 
-That’s it — tweak the HTML, print again, ship the PDF.
+## Estrutura
+
+```
+knowledge-base/
+├── perfil/                   ← fonte de dados da carreira
+│   ├── dados-pessoais.md    ← contato, links
+│   ├── experiencias.md      ← histórico de empregos
+│   ├── habilidades.md       ← inventário de habilidades com nível
+│   ├── certificacoes.md     ← certificações
+│   └── formacao.md          ← formação acadêmica + idiomas
+│
+├── feitos.md                 ← realizações com impacto mensurável
+├── QUANDO-ATUALIZAR.md       ← guia: qual arquivo atualizar para cada evento
+│
+├── vagas/                    ← contextos de vagas (gerado pelo agente)
+├── atribuicoes/              ← contextos por tipo de responsabilidade
+└── relatorios/               ← relatórios de aderência (output do agente)
+
+v0/                           ← currículos HTML (customizados por vaga ou por perfil)
+```
+
+## Exportar para PDF
+
+1. Abra o HTML desejado no navegador.
+2. Use **Print** (`Ctrl+P` / `Cmd+P`).
+3. Escolha **Save as PDF**.
+4. Use papel **A4** e ative fundos/gráficos para manter o layout.

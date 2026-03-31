@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Gustavo Oliveira de Carvalho — SRE/Observability (Jr → Pl)</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Currículo SRE/Observability (Jr → Pl) — Gustavo Oliveira de Carvalho.">
+
+  <style>
+    :root {
+      --bg: #f6f7fb;
+      --panel: #ffffff;
+      --ink: #0f172a;
+      --muted: #475569;
+      --muted-2: #64748b;
+      --line: #e2e8f0;
+      --accent: #2563eb;
+      --accent-2: #1d4ed8;
+      --chip: #eff6ff;
+      --shadow: 0 10px 30px rgba(2, 6, 23, 0.08);
+      --radius: 16px;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: radial-gradient(1200px 500px at 20% 0%, rgba(37, 99, 235, 0.10), transparent 55%),
+                  radial-gradient(900px 450px at 100% 10%, rgba(29, 78, 216, 0.08), transparent 45%),
+                  var(--bg);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      line-height: 1.55;
+    }
+
+    a { color: var(--accent); text-decoration: none; text-underline-offset: 3px; }
+    a:hover { color: var(--accent-2); text-decoration: underline; }
+    a:focus-visible { outline: 3px solid rgba(37, 99, 235, 0.35); outline-offset: 2px; border-radius: 8px; }
+
+    .page {
+      width: min(980px, calc(100% - 32px));
+      margin: 28px auto;
+      background: var(--panel);
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 34px;
+    }
+
+    header.top {
+      display: grid;
+      grid-template-columns: 1.6fr 1fr;
+      gap: 14px 26px;
+      align-items: start;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .name {
+      margin: 0;
+      font-size: 34px;
+      letter-spacing: -0.02em;
+      line-height: 1.12;
+    }
+
+    .title { margin-top: 10px; color: var(--muted); font-size: 15px; }
+    .tagline { margin-top: 10px; color: var(--muted-2); font-size: 14px; }
+
+    .contact {
+      margin: 2px 0 0;
+      padding: 0;
+      list-style: none;
+      display: grid;
+      gap: 8px;
+      justify-items: end;
+      font-size: 13.5px;
+      color: var(--muted);
+    }
+    .contact li { display: flex; gap: 10px; align-items: baseline; }
+    .contact .k { color: var(--muted-2); min-width: 68px; text-align: right; }
+    .contact .v { color: var(--ink); }
+
+    main { margin-top: 16px; }
+    section { margin-top: 20px; }
+
+    h2 {
+      margin: 0 0 12px;
+      font-size: 14px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted-2);
+    }
+
+    h3 { margin: 0; font-size: 16px; letter-spacing: -0.01em; }
+    p { margin: 0 0 10px; color: var(--ink); }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 16px 26px;
+    }
+
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px;
+      background: linear-gradient(180deg, rgba(248, 250, 252, 0.6), rgba(255, 255, 255, 0.95));
+    }
+
+    .bullets {
+      margin: 10px 0 0;
+      padding-left: 18px;
+      color: var(--ink);
+    }
+    .bullets li { margin: 7px 0; }
+
+    .role {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      padding: 14px;
+      background: #fff;
+    }
+
+    .role-head {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 10px;
+      align-items: baseline;
+      margin-bottom: 8px;
+    }
+
+    .meta { font-size: 13px; color: var(--muted); }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      padding: 6px 10px;
+      border-radius: 999px;
+      background: var(--chip);
+      border: 1px solid rgba(37, 99, 235, 0.15);
+      color: #0b2a6f;
+      font-size: 12.5px;
+      white-space: nowrap;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .skill-group h3 { font-size: 14px; }
+    .skill-group p { margin: 8px 0 0; color: var(--muted); font-size: 13.5px; }
+
+    .footer {
+      margin-top: 20px;
+      padding-top: 12px;
+      border-top: 1px solid var(--line);
+      font-size: 12.5px;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .footer .hint { color: var(--muted-2); }
+
+    @media (max-width: 780px) {
+      .page { padding: 22px; }
+      header.top { grid-template-columns: 1fr; }
+      .contact { justify-items: start; }
+      .contact .k { min-width: 74px; text-align: left; }
+      .grid-2 { grid-template-columns: 1fr; }
+      .skills { grid-template-columns: 1fr; }
+    }
+
+    /* Garantia de "no máximo 2 páginas" quando salvar como PDF */
+    @media print {
+      @page { size: A4; margin: 12mm; }
+
+      :root {
+        --bg: #ffffff;
+        --panel: #ffffff;
+        --ink: #000000;
+        --muted: #111827;
+        --muted-2: #111827;
+        --line: #d1d5db;
+        --accent: #000000;
+        --accent-2: #000000;
+        --chip: #f3f4f6;
+        --shadow: none;
+      }
+
+      body { background: #fff; font-size: 11pt; }
+      .page { box-shadow: none; border: none; margin: 0; width: 100%; padding: 0; }
+      a { text-decoration: underline; }
+      a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 9.5pt; color: #374151; }
+      .card, .role { break-inside: avoid; }
+      h2 { margin-bottom: 8px; }
+      section { margin-top: 14px; }
+      .bullets li { margin: 6px 0; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <header class="top">
+      <div>
+        <h1 class="name">Gustavo Oliveira de Carvalho</h1>
+        <div class="title">SRE / Observability (Jr → Pl) • Confiabilidade & Incidentes</div>
+        <div class="tagline">
+          ~1 ano de experiência em produção com foco em observabilidade, diagnóstico de incidentes e melhorias de estabilidade e custo.
+        </div>
+      </div>
+
+      <ul class="contact" aria-label="Informações de contato">
+        <li><span class="k">Local</span><span class="v">Brasil</span></li>
+        <li><span class="k">Email</span><span class="v"><a href="mailto:gustavoooliveiradecarvalho@gmail.com">gustavoooliveiradecarvalho@gmail.com</a></span></li>
+        <li><span class="k">LinkedIn</span><span class="v"><a href="https://linkedin.com/in/gusta-carvalho" target="_blank" rel="noopener noreferrer">linkedin.com/in/gusta-carvalho</a></span></li>
+        <li><span class="k">GitHub</span><span class="v"><a href="https://github.com/carvalhosauro" target="_blank" rel="noopener noreferrer">github.com/carvalhosauro</a></span></li>
+      </ul>
+    </header>
+
+    <main>
+      <section class="grid-2" aria-label="Resumo e destaques">
+        <div class="card">
+          <h2>Resumo</h2>
+          <p>
+            Atuação em ambiente de produção com foco em confiabilidade e visibilidade do sistema:
+            instrumentação (logs, métricas e tracing), apoio a diagnóstico e redução de impacto de incidentes.
+          </p>
+          <p class="meta">
+            Interesses: observabilidade, práticas SRE, prevenção de regressões, resiliência de dependências externas e eficiência operacional.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>Destaques</h2>
+          <ul class="bullets">
+            <li><strong>Melhoria de MTTR</strong> com estratégia de observabilidade (OpenTelemetry + Jaeger + Loki).</li>
+            <li><strong>Mais estabilidade</strong> em integrações externas via padrões de resiliência (ex.: Circuit Breaker).</li>
+            <li><strong>~50% de redução de custo</strong> ao analisar e otimizar integração (cache e refatoração).</li>
+          </ul>
+        </div>
+      </section>
+
+      <section aria-label="Experiência">
+        <h2>Experiência</h2>
+        <article class="role">
+          <div class="role-head">
+            <div>
+              <h3>Pigz</h3>
+              <div class="meta">Desenvolvedor Backend (foco em observabilidade/produção)</div>
+            </div>
+            <div class="meta">Jan/2025 – Presente</div>
+          </div>
+
+          <p class="meta">
+            Sistemas backend críticos (delivery/logística) em produção: incidentes, monitoramento e melhorias operacionais.
+          </p>
+
+          <ul class="bullets">
+            <li>
+              <strong>Observabilidade end-to-end:</strong> desenho e implementação de estratégia com logs, métricas e tracing distribuído usando OpenTelemetry, Jaeger e Loki.
+            </li>
+            <li>
+              <strong>Operação e incidentes:</strong> suporte a diagnóstico com dados acionáveis (dashboards e métricas), reduzindo tempo de investigação.
+            </li>
+            <li>
+              <strong>Monitoramento:</strong> uso de Prometheus e Grafana para visualização de métricas e acompanhamento do comportamento do sistema.
+            </li>
+            <li>
+              <strong>Resiliência:</strong> aplicação de padrões para reduzir impacto de falhas de terceiros e aumentar estabilidade.
+            </li>
+            <li>
+              <strong>Eficiência:</strong> análise de custo/latência em integrações e otimizações (cache/refatoração) com foco em impacto real.
+            </li>
+          </ul>
+
+          <div class="chips" aria-label="Stack">
+            <span class="chip">OpenTelemetry</span>
+            <span class="chip">Prometheus</span>
+            <span class="chip">Grafana</span>
+            <span class="chip">Jaeger</span>
+            <span class="chip">Loki</span>
+            <span class="chip">Linux</span>
+            <span class="chip">Docker</span>
+            <span class="chip">MySQL</span>
+            <span class="chip">AWS SQS</span>
+            <span class="chip">Metabase</span>
+          </div>
+        </article>
+      </section>
+
+      <section aria-label="Competências">
+        <h2>Competências</h2>
+        <div class="skills">
+          <div class="card skill-group">
+            <h3>Observabilidade</h3>
+            <p>Instrumentação, tracing distribuído, logs estruturados e métricas para diagnóstico e prevenção.</p>
+          </div>
+
+          <div class="card skill-group">
+            <h3>Confiabilidade</h3>
+            <p>Resiliência em integrações, redução de acoplamento, análise de falhas e melhoria contínua em produção.</p>
+          </div>
+
+          <div class="card skill-group">
+            <h3>Operação</h3>
+            <p>Linux, Docker, dashboards e rotinas para tornar métricas acionáveis (Grafana/Metabase).</p>
+          </div>
+
+          <div class="card skill-group">
+            <h3>Em estudo</h3>
+            <p>Go (Golang) e fundamentos de Kubernetes.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid-2" aria-label="Formação e idiomas">
+        <div class="card">
+          <h2>Educação</h2>
+          <h3>Instituto Federal de Roraima (IFRR)</h3>
+          <p class="meta">Tecnólogo em Análise e Desenvolvimento de Sistemas (TADS) • Conclusão prevista: Dez/2026</p>
+        </div>
+
+        <div class="card">
+          <h2>Idiomas</h2>
+          <p class="meta"><strong>Português:</strong> Nativo</p>
+          <p class="meta"><strong>Inglês:</strong> Técnico (em evolução)</p>
+        </div>
+      </section>
+
+      <div class="footer" aria-label="Rodapé">
+        <div>Currículo (SRE/Observability) • Atualizado em 2026</div>
+        <div class="hint">Para PDF: Imprimir → Salvar como PDF (A4).</div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
