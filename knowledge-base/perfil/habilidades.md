@@ -17,6 +17,26 @@ Níveis: `produção` = usado em ambiente real / `estudo` = aprendendo ativament
 | Go (Golang) | estudo | scripts pontuais em produção; aprendendo ativamente |
 | Laravel | familiaridade | |
 
+## IA / LLM
+
+| Habilidade | Nível | Notas |
+|-----------|-------|-------|
+| Integração com LLMs | produção | arquitetura extensível por provedor (deepseek em uso, Gemini e OpenAI suportados) no MVP de WhatsApp conversacional |
+| llphant/llphant (PHP) | produção | framework de orquestração LLM em PHP utilizado no motor conversacional |
+| RAG | produção | recuperação ancorada em catálogo/regras do tenant para respostas confiáveis |
+| Function calling / Tools | produção | LLM executando ações reais (buscar produto, carrinho, fechamento de pedido) |
+| Meta WhatsApp Cloud API | produção | integração ponta-a-ponta (mensagens, mídia, sessão) |
+| Bancos vetoriais | familiaridade | conceito aplicado via RAG; aprofundando |
+| Python (asyncio/FastAPI/SQLAlchemy) | estudo | em transição para uso direto em backend de IA |
+
+## IA aplicada ao desenvolvimento
+
+| Habilidade | Nível | Notas |
+|-----------|-------|-------|
+| Claude Code | produção | uso diário em brainstorm, debug, codegen, testes, refactor |
+| Cursor / Antigravity | produção | par de programação assistida no fluxo diário |
+| Prompt engineering aplicado | produção | iteração crítica sobre output, integrado ao PR |
+
 ## Banco de Dados
 
 | Habilidade | Nível | Notas |

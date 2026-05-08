@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Gustavo Oliveira de Carvalho — IA &amp; Backend Pleno · Escavador</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Currículo adaptado para Escavador (IA & Backend Pleno) — Gustavo Oliveira de Carvalho.">
+
+  <style>
+    :root {
+      --bg: #f6f7fb;
+      --panel: #ffffff;
+      --ink: #0f172a;
+      --muted: #475569;
+      --muted-2: #64748b;
+      --line: #e2e8f0;
+      --accent: #2563eb;
+      --accent-2: #1d4ed8;
+      --chip: #eff6ff;
+      --shadow: 0 10px 30px rgba(2, 6, 23, 0.08);
+      --radius: 16px;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: radial-gradient(1200px 500px at 20% 0%, rgba(37, 99, 235, 0.10), transparent 55%),
+                  radial-gradient(900px 450px at 100% 10%, rgba(29, 78, 216, 0.08), transparent 45%),
+                  var(--bg);
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+      line-height: 1.55;
+    }
+
+    a { color: var(--accent); text-decoration: none; text-underline-offset: 3px; }
+    a:hover { color: var(--accent-2); text-decoration: underline; }
+    a:focus-visible { outline: 3px solid rgba(37, 99, 235, 0.35); outline-offset: 2px; border-radius: 8px; }
+
+    .page {
+      width: min(980px, calc(100% - 32px));
+      margin: 28px auto;
+      background: var(--panel);
+      border: 1px solid rgba(226, 232, 240, 0.9);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      padding: 34px;
+    }
+
+    header.top {
+      display: grid;
+      grid-template-columns: 1.6fr 1fr;
+      gap: 14px 26px;
+      align-items: start;
+      padding-bottom: 16px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .name { margin: 0; font-size: 34px; letter-spacing: -0.02em; line-height: 1.12; }
+    .title { margin-top: 10px; color: var(--muted); font-size: 15px; }
+    .tagline { margin-top: 10px; color: var(--muted-2); font-size: 14px; }
+
+    .contact {
+      margin: 2px 0 0; padding: 0; list-style: none;
+      display: grid; gap: 8px; justify-items: end;
+      font-size: 13.5px; color: var(--muted);
+    }
+    .contact li { display: flex; gap: 10px; align-items: baseline; }
+    .contact .k { color: var(--muted-2); min-width: 68px; text-align: right; }
+    .contact .v { color: var(--ink); }
+
+    main { margin-top: 16px; }
+    section { margin-top: 20px; }
+
+    h2 {
+      margin: 0 0 12px; font-size: 14px;
+      letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted-2);
+    }
+    h3 { margin: 0; font-size: 16px; letter-spacing: -0.01em; }
+    p { margin: 0 0 10px; color: var(--ink); }
+
+    .grid-2 { display: grid; grid-template-columns: 1.3fr 1fr; gap: 16px 26px; }
+
+    .card {
+      border: 1px solid var(--line); border-radius: 14px; padding: 14px;
+      background: linear-gradient(180deg, rgba(248, 250, 252, 0.6), rgba(255, 255, 255, 0.95));
+    }
+
+    .bullets { margin: 10px 0 0; padding-left: 18px; color: var(--ink); }
+    .bullets li { margin: 7px 0; }
+
+    .role { border: 1px solid var(--line); border-radius: 14px; padding: 14px; background: #fff; }
+    .role-head { display: grid; grid-template-columns: 1fr auto; gap: 10px; align-items: baseline; margin-bottom: 8px; }
+    .meta { font-size: 13px; color: var(--muted); }
+
+    .chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+    .chip {
+      display: inline-flex; align-items: center; padding: 6px 10px;
+      border-radius: 999px; background: var(--chip);
+      border: 1px solid rgba(37, 99, 235, 0.15); color: #0b2a6f;
+      font-size: 12.5px; white-space: nowrap;
+    }
+
+    .skills { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    .skill-group h3 { font-size: 14px; }
+    .skill-group p { margin: 8px 0 0; color: var(--muted); font-size: 13.5px; }
+
+    @media (max-width: 780px) {
+      .page { padding: 22px; }
+      header.top { grid-template-columns: 1fr; }
+      .contact { justify-items: start; }
+      .contact .k { min-width: 74px; text-align: left; }
+      .grid-2 { grid-template-columns: 1fr; }
+      .skills { grid-template-columns: 1fr; }
+    }
+
+    @media print {
+      @page { size: A4; margin: 8mm; }
+      :root {
+        --bg: #ffffff; --panel: #ffffff; --ink: #000000;
+        --muted: #111827; --muted-2: #111827; --line: #d1d5db;
+        --accent: #000000; --accent-2: #000000; --chip: #f3f4f6; --shadow: none;
+      }
+      body { background: #fff; font-size: 10pt; line-height: 1.32; }
+      .page { box-shadow: none; border: none; margin: 0; width: 100%; padding: 0; }
+      a { text-decoration: underline; }
+      a[href^="http"]::after { content: " (" attr(href) ")"; font-size: 9pt; color: #374151; }
+
+      /* deixa qualquer bloco grande quebrar entre filhos */
+      .card, .role { break-inside: auto; page-break-inside: auto; }
+
+      /* mantém títulos com o conteúdo seguinte */
+      h2, h3 { break-after: avoid; page-break-after: avoid; }
+      .role-head { break-after: avoid; page-break-after: avoid; }
+      section > h2 { break-after: avoid; page-break-after: avoid; }
+
+      /* não corta bullet no meio */
+      .bullets li { break-inside: avoid; page-break-inside: avoid; }
+
+      header.top { padding-bottom: 8px; }
+      main { margin-top: 8px; }
+      h2 { margin-bottom: 6px; font-size: 11.5px; }
+      h3 { font-size: 12.5px; }
+      p { margin: 0 0 5px; }
+      section { margin-top: 9px; }
+      .grid-2 { gap: 8px 12px; }
+      .card, .role { padding: 9px; border-radius: 8px; }
+      .bullets { margin-top: 5px; padding-left: 16px; }
+      .bullets li { margin: 3px 0; }
+      .meta { font-size: 10.5px; }
+      .chip { font-size: 9.5px; padding: 2px 6px; }
+      .chips { gap: 4px; margin-top: 6px; }
+      .name { font-size: 24pt; }
+      .title { font-size: 11pt; margin-top: 4px; }
+      .tagline { font-size: 10pt; margin-top: 4px; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <header class="top">
+      <div>
+        <h1 class="name">Gustavo Oliveira de Carvalho</h1>
+        <div class="title">Engenheiro de Software Pleno • IA aplicada, LLMs, RAG &amp; Backend de produção</div>
+        <div class="tagline">
+          Backend de produção em SaaS crítico (delivery), com entrega recente de MVP de pedidos 100% conversacionais via WhatsApp usando LLM + RAG + function calling. Cultura forte de observabilidade end-to-end e otimização de latência/custo em produção.
+        </div>
+      </div>
+
+      <ul class="contact" aria-label="Informações de contato">
+        <li><span class="k">Local</span><span class="v">Brasil — Remoto</span></li>
+        <li><span class="k">Email</span><span class="v"><a href="mailto:gustavoooliveiradecarvalho@gmail.com">gustavoooliveiradecarvalho@gmail.com</a></span></li>
+        <li><span class="k">LinkedIn</span><span class="v"><a href="https://linkedin.com/in/gusta-carvalho" target="_blank" rel="noopener noreferrer">linkedin.com/in/gusta-carvalho</a></span></li>
+        <li><span class="k">GitHub</span><span class="v"><a href="https://github.com/carvalhosauro" target="_blank" rel="noopener noreferrer">github.com/carvalhosauro</a></span></li>
+      </ul>
+    </header>
+
+    <main>
+      <section class="grid-2" aria-label="Resumo e destaques">
+        <div class="card">
+          <h2>Resumo</h2>
+          <p>
+            Desenvolvedor backend com entrega recente de funcionalidade de IA em produção: pedidos 100% conversacionais via WhatsApp usando <strong>LLM + RAG + function calling</strong> (llphant/llphant), com arquitetura extensível por provedor (deepseek em uso; Gemini e OpenAI suportados) e integração ponta-a-ponta com Meta WhatsApp Cloud API.
+          </p>
+          <p class="meta">
+            Base sólida em backend de produção: APIs REST, MySQL, Docker, sistemas assíncronos via fila (AWS SQS), observabilidade end-to-end (OpenTelemetry + Jaeger + Loki + Prometheus + Grafana). Em transição ativa para Python (FastAPI/SQLAlchemy/asyncio) para operar pipelines de IA com SLO real.
+          </p>
+        </div>
+
+        <div class="card">
+          <h2>Impacto</h2>
+          <ul class="bullets">
+            <li><strong>+10% em vendas em 2 dias</strong> no piloto do MVP de WhatsApp conversacional (LLM + RAG + tools) — entregue em 2 semanas.</li>
+            <li><strong>~50% de redução de custo</strong> + melhoria de latência em integração externa via análise, cache e refatoração.</li>
+            <li><strong>Observabilidade end-to-end</strong> reduzindo MTTR em produção — fundação direta para operar IA com baixa latência.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section aria-label="Experiência">
+        <h2>Experiência</h2>
+        <article class="role">
+          <div class="role-head">
+            <div>
+              <h3>Pigz</h3>
+              <div class="meta">Desenvolvedor Backend — SaaS crítico de Delivery / Logística</div>
+            </div>
+            <div class="meta">Jan/2025 – Presente</div>
+          </div>
+
+          <p class="meta">
+            Atuação em backend de produção com tráfego real e integrações externas instáveis. Foco em performance, baixa latência, resiliência e diagnóstico profundo de incidentes.
+          </p>
+
+          <ul class="bullets">
+            <li>
+              <strong>Pedidos 100% conversacionais via WhatsApp (LLM + RAG + tools):</strong> projetei e entreguei em 2 semanas o MVP que permite ao cliente final fazer pedidos completos em conversa natural. Construído sobre <em>llphant/llphant</em> (PHP) com arquitetura extensível por provedor de LLM (deepseek-v4-flash em uso; Gemini e OpenAI suportados); integração ponta-a-ponta com Meta WhatsApp Cloud API; <strong>function calling/tools</strong> para ações reais (buscar produto, montar carrinho, calcular taxa, fechar pedido, consultar status); <strong>RAG</strong> sobre catálogo/regras do tenant para respostas ancoradas. Resultado no piloto: <strong>+10% em vendas em 2 dias</strong>.
+            </li>
+            <li>
+              <strong>IA aplicada ao próprio desenvolvimento:</strong> uso intenso e diário de <strong>Claude Code</strong> e <strong>Cursor/Antigravity</strong> em brainstorm, debug, codegen, escrita de testes e refactor. Impacto direto: aumento de cobertura de testes e velocidade de entrega — viabilizou o MVP do WhatsApp em 2 semanas.
+            </li>
+            <li>
+              <strong>Otimização de performance em produção:</strong> análise de padrão de chamadas, cache e refatoração resultaram em ~50% de redução de custo na integração Google Geolocation, com melhoria de latência em horários de pico.
+            </li>
+            <li>
+              <strong>Observabilidade end-to-end:</strong> instrumentação com OpenTelemetry + tracing distribuído (Jaeger), logs estruturados (Loki), métricas (Prometheus) e dashboards (Grafana) — reduzindo MTTR em incidentes e dando visibilidade real do sistema em produção.
+            </li>
+            <li>
+              <strong>Sistemas assíncronos e desacoplamento:</strong> AWS SQS para filas entre serviços; Circuit Breaker e retries para integrações externas — mentalidade async transferível para asyncio, pipelines e processamento batch.
+            </li>
+            <li>
+              <strong>APIs REST e SQL:</strong> projeto e manutenção de endpoints em PHP/Symfony; queries, modelagem e dashboards no Metabase para decisões técnicas e de negócio.
+            </li>
+            <li>
+              <strong>Diagnóstico de causa raiz e mentoria:</strong> investigação estruturada de incidentes em produção; onboarding e acompanhamento de novo integrante do time; tradução de problemas técnicos para times não-técnicos.
+            </li>
+          </ul>
+
+          <div class="chips" aria-label="Tecnologias">
+            <span class="chip">LLM (deepseek/Gemini/OpenAI)</span>
+            <span class="chip">RAG</span>
+            <span class="chip">Function Calling / Tools</span>
+            <span class="chip">llphant/llphant</span>
+            <span class="chip">Meta WhatsApp Cloud API</span>
+            <span class="chip">Claude Code</span>
+            <span class="chip">Cursor / Antigravity</span>
+            <span class="chip">PHP (Symfony)</span>
+            <span class="chip">MySQL / SQL</span>
+            <span class="chip">REST APIs</span>
+            <span class="chip">Docker</span>
+            <span class="chip">AWS SQS</span>
+            <span class="chip">OpenTelemetry</span>
+            <span class="chip">Jaeger</span>
+            <span class="chip">Loki</span>
+            <span class="chip">Prometheus</span>
+            <span class="chip">Grafana</span>
+            <span class="chip">Metabase</span>
+            <span class="chip">Go (scripts)</span>
+            <span class="chip">Linux / Bash</span>
+          </div>
+        </article>
+      </section>
+
+      <section aria-label="Competências">
+        <h2>Competências</h2>
+        <div class="skills">
+          <div class="card skill-group">
+            <h3>IA aplicada (em produção)</h3>
+            <p>Integração com LLMs (arquitetura extensível por provedor), RAG, function calling/tools, llphant/llphant, Meta WhatsApp Cloud API. Familiaridade com o conceito de bancos vetoriais via RAG.</p>
+          </div>
+
+          <div class="card skill-group">
+            <h3>IA no desenvolvimento</h3>
+            <p>Claude Code e Cursor/Antigravity em uso diário — brainstorm, debug, codegen, testes e refactor. Ganhos reais em cobertura e velocidade.</p>
+          </div>
+
+          <div class="card skill-group">
+            <h3>Backend, Performance &amp; Produção</h3>
+            <p>APIs REST em produção, otimização de latência e custo, diagnóstico de causa raiz, observabilidade end-to-end (OTel, tracing, métricas, logs), resiliência (Circuit Breaker).</p>
+          </div>
+
+          <div class="card skill-group">
+            <h3>Async, Dados &amp; Infra</h3>
+            <p>Sistemas assíncronos via fila (AWS SQS), Docker em produção, SQL/MySQL para análise e modelagem; scripting (Bash, Go).</p>
+          </div>
+
+          <div class="card skill-group">
+            <h3>Em estudo ativo (Python)</h3>
+            <p>Python moderno, FastAPI/SQLAlchemy/asyncio e bancos vetoriais dedicados (pgvector/Qdrant) — para migrar a stack de IA atual para o ecossistema Python.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="grid-2" aria-label="Formação e idiomas">
+        <div class="card">
+          <h2>Educação</h2>
+          <h3>Instituto Federal de Roraima (IFRR)</h3>
+          <p class="meta">Tecnólogo em Análise e Desenvolvimento de Sistemas (TADS) • Conclusão prevista: Dez/2026</p>
+        </div>
+
+        <div class="card">
+          <h2>Idiomas</h2>
+          <p class="meta"><strong>Português:</strong> Nativo</p>
+          <p class="meta"><strong>Inglês:</strong> Técnico (leitura e escrita de documentação; em evolução)</p>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

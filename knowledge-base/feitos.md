@@ -23,6 +23,42 @@ Use este arquivo para alimentar o "motor" de adaptacao de curriculos.
 
 ---
 
+## 2026-05-07 - Pedidos 100% conversacionais via WhatsApp com LLM + RAG + tools (Pigz)
+- Contexto: MVP construído em 2 semanas para permitir que clientes finais façam pedidos completos via WhatsApp, em conversa natural, sem precisar abrir app/site. Em piloto com cliente real.
+- Atribuicao: backend, IA, integrações
+- Acoes:
+  - projetei e implementei a integração com a Meta WhatsApp Cloud API (envio/recebimento, mídia, sessão de conversa);
+  - estruturei o motor conversacional sobre `llphant/llphant` (PHP) com arquitetura **extensível por provedor de LLM** (atualmente em uso: deepseek-v4-flash; suporte preparado para Gemini e OpenAI);
+  - implementei **function calling / tools** para que o LLM execute ações reais (buscar produto, montar carrinho, calcular taxa, fechar pedido, consultar status);
+  - implementei **RAG** sobre catálogo/regras do estabelecimento para respostas ancoradas em dados reais do tenant;
+  - cuidei de orquestração de turnos, controle de contexto e fallback determinístico para fluxos críticos (pagamento, fechamento de pedido).
+- Tecnologias: PHP, Symfony, llphant/llphant, Meta WhatsApp Cloud API, RAG, function calling/tools, deepseek-v4-flash, MySQL, Docker.
+- Impacto:
+  - **+10% em vendas em 2 dias** no piloto com primeiro cliente;
+  - canal de vendas conversacional novo, com baixa fricção para o cliente final;
+  - MVP entregue em 2 semanas (velocidade alavancada por uso intenso de IA no desenvolvimento — ver feito abaixo).
+- Evidencias:
+  - piloto em produção com cliente;
+  - métrica de vendas no Metabase (antes/depois).
+- Tags: [ia], [llm], [rag], [tools], [function-calling], [whatsapp], [backend], [api], [produto], [mvp]
+
+## 2026-05-07 - IA aplicada ao próprio desenvolvimento (Claude Code, Cursor/Antigravity)
+- Contexto: Adoção intensa de assistentes de IA como parte do fluxo de desenvolvimento diário — tanto em features novas quanto em refactor de legado.
+- Atribuicao: produtividade, qualidade
+- Acoes:
+  - uso intenso de **Claude Code** e **Cursor/Antigravity** em brainstorm de design, debug, escrita de código, geração de testes e refatoração;
+  - hábito de prompts iterativos, revisão crítica do output e integração ao fluxo de PR;
+  - aplicação direta no MVP do WhatsApp conversacional, viabilizando entrega em 2 semanas.
+- Tecnologias: Claude Code, Cursor/Antigravity, PHP, Symfony, PHPUnit.
+- Impacto:
+  - **aumento da cobertura de testes** em módulos onde antes não havia;
+  - **aumento da velocidade de desenvolvimento** — entregas que antes levavam semanas reduzidas a dias;
+  - melhor qualidade em refactor de legado por geração + validação assistidas.
+- Evidencias:
+  - PRs com testes adicionados;
+  - MVP do WhatsApp conversacional em 2 semanas.
+- Tags: [ia], [produtividade], [testes], [refactor], [dev-experience]
+
 ## 2026-03-31 - Elo técnico entre produto e cliente na Pigz
 - Contexto: Startup enxuta onde dúvidas técnicas de clientes chegam via time de suporte e comercial; ocasionalmente direto ao dev.
 - Atribuicao: produto, comunicação, suporte técnico
